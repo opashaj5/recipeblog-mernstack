@@ -8,12 +8,14 @@ export default function AuthPage({ setUser }) {
     const [showLogin, setShowLogin] = useState(true);
 
     return (
-        <main className={styles.AuthPage}>
-            <div>
-                <Logo />
-                <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</h3>
-            </div>
-            {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
-        </main>
+        <>
+            <Logo />
+            <main className={styles.AuthPage}>
+                <div>
+                    <h3 onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'Not a member? SIGN UP' : 'Have an account? LOG IN'}</h3>
+                </div>
+                {showLogin ? <LoginForm setUser={setUser} /> : <SignUpForm setUser={setUser} />}
+            </main>
+        </>
     );
 }

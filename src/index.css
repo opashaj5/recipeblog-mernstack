@@ -1,11 +1,11 @@
 /* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
+  --tan-1: #FEFAE0;
+  --tan-2: #FAEDCD;
+  --green-1: #E9EDC9;
+  --green-2: #CCD5AE;
+  --green-3: #008000;
   --text-light: #968c84;
   --text-dark: #615954;
 }
@@ -17,13 +17,14 @@
 }
 
 body {
+  text-align: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--tan-4);
+  background-color: #F8F0E3;
   padding: 2vmin;
   height: 100vh;
 }
@@ -82,13 +83,15 @@ code {
 
 .form-container {
   padding: 3vmin;
-  background-color: var(--tan-1);
+  background-color: white;
   border: .1vmin solid var(--tan-3);
   border-radius: 1vmin;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 p.error-message {
-  color: var(--orange);
+  color: var(--green-3);
   text-align: center;
 }
 
@@ -108,7 +111,7 @@ label {
 input {
   padding: 1vmin;
   font-size: 2vmin;
-  border: .1vmin solid var(--tan-3);
+  border: .1vmin solid;
   border-radius: .5vmin;
   color: var(--text-dark);
   background-image: none !important;
@@ -117,7 +120,7 @@ input {
 }
 
 input:focus {
-  border-color: var(--orange);
+  border-color: var(--green-3);
 }
 
 button,
@@ -125,12 +128,12 @@ a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
-  background-color: var(--orange);
+  background-color: var(--green-3);
   font-size: 2vmin;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  border: .1vmin solid var(--tan-2);
+  border: .1vmin;
   border-radius: .5vmin;
   outline: none;
   cursor: pointer;
@@ -149,7 +152,6 @@ button.btn-xs {
 button:disabled,
 form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: var(--tan-4);
 }
 
 button[type="submit"] {
