@@ -1,9 +1,6 @@
 import styles from "./AboutPage.css";
 import { Link } from "react-router-dom";
 
-const React = require('react');
-const DefaultLayout = require('../Default.jsx');
-
 export default function AboutPage() {
     return (
         <main className={styles.AboutPage}>
@@ -22,4 +19,4 @@ export default function AboutPage() {
             </div>
         </main>
     )
-}
+};
