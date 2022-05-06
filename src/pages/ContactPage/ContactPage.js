@@ -7,7 +7,7 @@ export default function ContactPage() {
                 <h2>Contact Me</h2>
                 <article>
                     <div className="contact-card">
-                        <img className="card-img-top" alt="card image cap" />
+                        {/* <img className="card-img-top" alt="card image cap" /> */}
                         <div className="card-body">
                             <h5 className="card-title">Email</h5>
                             <p className="card-text"></p>

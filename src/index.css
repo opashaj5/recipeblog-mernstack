@@ -158,3 +158,18 @@ button[type="submit"] {
   grid-column: span 2;
   margin: 1vmin 0 0;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.card-wrapper {
+  justify-content: space-around;
+  display: flex;
+  width: 100% !important;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
