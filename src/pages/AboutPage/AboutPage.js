@@ -1,4 +1,4 @@
-import styles from "./AboutPage.css";
+import styles from "./AboutPage.module.css";
 import { Link } from "react-router-dom";
 
 export default function AboutPage() {
