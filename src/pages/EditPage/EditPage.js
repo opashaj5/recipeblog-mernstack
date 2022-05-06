@@ -1,4 +1,4 @@
-import EditTask from "../../components/EditPost/EditPost";
+import EditPost from "../../components/EditPost/EditPost";
 
 export default function EditPage() {
     return (

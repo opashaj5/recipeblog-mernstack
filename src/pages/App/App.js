@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 // import styles from './App.module.css';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
-import NewOrderPage from '../ContactPage/ContactPage';
+import ContactPage from '../ContactPage/ContactPage';
 import CreatePage from '../CreatePage/CreatePage';
 import EditPage from '../EditPage/EditPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
