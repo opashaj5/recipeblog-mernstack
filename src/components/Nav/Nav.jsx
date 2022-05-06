@@ -30,10 +30,10 @@ export default function Nav({ user, setUser }) {
                                 <Link to="/about" className="nav-link">ABOUT</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="contact" className="nav-link">CONTACT</Link>
+                                <Link to="/contact" className="nav-link">CONTACT</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/shop" className="nav-link">SHOP</Link>
+                                <Link to="/orders/new" className="nav-link">SHOP</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/new" className="nav-link">CREATE</Link>

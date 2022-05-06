@@ -3,6 +3,9 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 // import styles from './App.module.css';
 import { getUser } from '../../utilities/users-service';
 import AuthPage from '../AuthPage/AuthPage';
+import NewOrderPage from '../ContactPage/ContactPage';
+import CreatePage from '../CreatePage/CreatePage';
+import EditPage from '../EditPage/EditPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import Nav from '../../components/Nav/Nav';
@@ -23,7 +26,7 @@ export default function App() {
                         <Route path="/" element={<HomePage />}></Route>
                         <Route path="/about" element={<AboutPage />}></Route>
                         <Route path="/contact" element={<ContactPage />}></Route>
-                        <Route path="/shop" element={<ShopPage />}></Route>
+                        {/* <Route path="/shop" element={<ShopPage />}></Route> */}
                         <Route path="/new" element={<CreatePage />}></Route>
                         <Route path="/edit/post/:id" element={<EditPage />}></Route>
                         <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
