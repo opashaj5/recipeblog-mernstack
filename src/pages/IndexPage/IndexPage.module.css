@@ -13,5 +13,14 @@ h1 {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
-    font-weight: bold;
+}
+
+.IndexContainer {
+    width: auto;
+    margin: auto;
+    padding: 3vmin;
+    background-color: white;
+    border-radius: 1vmin;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }

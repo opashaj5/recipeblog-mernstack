@@ -1,0 +1,24 @@
+.ShowContainer {
+    width: 40%;
+    margin: auto;
+    padding: 3vmin;
+    background-color: white;
+    border-radius: 1vmin;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ShowEntry {
+    width: 40%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 3vmin;
+    background-color: white;
+    border-radius: 1vmin;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ShowPage p {
+    margin: 5px;
+}

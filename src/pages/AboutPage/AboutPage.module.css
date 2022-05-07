@@ -1,9 +1,19 @@
 .GitHubImg {
-    margin: 20px;
-    width: 75px;
+    margin: 10px;
+    width: 95px;
     border: 3px solid palevioletred;
 }
 
 .GitHubImg:hover {
     box-shadow: 0 0 7px 3px purple;
+}
+
+.AboutContainer {
+    width: 30%;
+    margin: auto;
+    padding: 3vmin;
+    background-color: white;
+    border-radius: 1vmin;
+    align-items: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
