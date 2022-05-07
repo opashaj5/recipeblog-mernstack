@@ -23,7 +23,7 @@ export default function IndexPage({ setChosenPost }) {
 
     if (loading) {
         return (
-            <h2>loading</h2>
+            <h2>Loading...</h2>
         )
     }
 

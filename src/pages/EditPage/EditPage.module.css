@@ -1,13 +1,9 @@
-.ContactContainer {
-    width: 30%;
+.EditContainer {
+    width: 40%;
     margin: auto;
     padding: 3vmin;
     background-color: white;
     border-radius: 1vmin;
     align-items: center;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-
-.ContactPage h1 {
-    margin-bottom: 20px;
 }

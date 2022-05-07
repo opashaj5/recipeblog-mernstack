@@ -36,7 +36,8 @@ export default function Nav({ user, setUser }) {
                                     <Link to="/contact" className="nav-link">CONTACT</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/orders/new" className="nav-link">SHOP</Link>
+                                    {/* <Link to="/orders/new" className="nav-link">SHOP</Link> */}
+                                    <Link to="#" className="nav-link">SHOP</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/new" className="nav-link">CREATE</Link>

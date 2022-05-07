@@ -12,20 +12,6 @@ export default function EditPost(props) {
     const img = useRef()
     const entry = useRef()
 
-    useEffect(() => {
-        (async () => {
-            try {
-                setLoading(true)
-                const response = await axios.get("/api/posts/:id")
-                setPosts(response.data)
-                setLoading(false)
-                // console.log(posts)
-            } catch (err) {
-                console.log(err)
-            }
-        })()
-    }, []);
-
     const handleSubmit = async (id) => {
         try {
             console.log(`test`)
@@ -71,7 +57,7 @@ export default function EditPost(props) {
                                 <div>
                                     <button onClick={() => { handleDelete(posts._id) }} className="button">Delete</button>
                                 </div>
-                                <Link to="/"><button>Back To Main Page</button></Link>
+                                {/* <Link to="/"><button>Back To Main Page</button></Link> */}
                             </div>
                         )
                     })}
