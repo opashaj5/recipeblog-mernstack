@@ -55,7 +55,6 @@ export default function Nav({ user, setUser }) {
                                 <div class="navbar-inner">
                                     <div class="container">
                                         <ul class="nav">
-
                                         </ul>
                                     </div>
                                 </div>
@@ -63,8 +62,8 @@ export default function Nav({ user, setUser }) {
                         </div>
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECIPES</a>
                         <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search..." aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
+                            <input className={styles.searchField} type="search" placeholder="Search..." aria-label="Search" />
+                            <button className={styles.searchBtn} type="submit">Search</button>
                         </form>
                     </div>
                 </nav >

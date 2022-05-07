@@ -1,16 +1,31 @@
 .Nav {
-    background-color: #F8F0E3;
+    background-color: white;
     border-radius: 5px;
 }
 
 a {
     color: black !important;
     font-weight: bold !important;
-    align-items: center !important;
-    text-align: center;
-    display: flex;
 }
 
 a:hover {
     color: #615954 !important;
+    transform: scale(0.9);
+}
+
+.searchBtn {
+    padding: 5px;
+    width: 100px;
+    margin: 0px !important;
+    font-size: 15px;
+}
+
+.searchBtn:hover {
+    background-color: #615954;
+    transform: scale(0.9);
+}
+
+.searchField {
+    height: 30px;
+    font-size: small;
 }

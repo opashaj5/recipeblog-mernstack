@@ -7,8 +7,14 @@
 }
 
 .AuthPage h3 {
+    font-size: smaller;
     margin-top: 4vmin;
     text-align: center;
+    color: black;
+}
+
+.AuthPage span {
     color: var(--text-light);
+    font-weight: bold;
     cursor: pointer;
 }

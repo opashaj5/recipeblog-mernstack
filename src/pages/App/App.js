@@ -14,9 +14,8 @@ import AboutPage from '../AboutPage/AboutPage';
 // import styles from '../../index.css';
 // import ReactDOM from 'react-dom';
 // import UserLogOut from "./app/components/UserLogOut/UserLogOut";
-import IndexPage from '../IndexPage';
-import ShowPage from '../ShowPage';
-import Logo from '../../components/Logo/Logo';
+import IndexPage from '../IndexPage/IndexPage';
+import ShowPage from '../ShowPage/ShowPage';
 
 export default function App() {
     const [user, setUser] = useState();

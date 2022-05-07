@@ -17,6 +17,7 @@
 }
 
 body {
+  background-color: #F8F0E3;
   text-align: center;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -165,6 +166,21 @@ button[type="submit"] {
   width: 100vw;
 }
 
+.card {
+  margin-top: 50px;
+  min-width: 250px !important;
+  max-width: 250px !important;
+  border: black solid 1px !important;
+  border-radius: 5px !important;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  height: 200px;
+  white-space: normal;
+  overflow: auto;
+}
+
 .card-wrapper {
   justify-content: space-around;
   display: flex;
@@ -174,6 +190,16 @@ button[type="submit"] {
   align-items: center;
 }
 
-.logout-btn {
-  background-color: #615954 !important;
+.show-card {
+  height: 50vh;
+  width: 50vw;
+  border: black solid 1px !important;
+  border-radius: 5px;
+  overflow: visible;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
 }

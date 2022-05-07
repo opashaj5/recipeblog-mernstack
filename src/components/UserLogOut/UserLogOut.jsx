@@ -10,7 +10,7 @@ export default function UserLogOut({ user, setUser, toggle, setToggle }) {
 
     return (
         <div className={styles.UserLogOut}>
-            <button className="btn-sm" onClick={handleLogOut}>LOG OUT</button>
-        </div>
+            <a className="btn me-auto mb-2 mb-lg-0" onClick={handleLogOut}>LOG OUT</a>
+        </div >
     );
 }
