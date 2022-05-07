@@ -20,7 +20,7 @@ Node.js | Express | React | MongoDB | Mongoose | JavaScript | CSS | HTML
 
 ## Next Steps
 
-I would like to get the search and edit functions working and likes/comments features. Those were thing few things I struggled with the most during my time on this project.
+I would like to get the search and edit functions working and likes/comments features. Those were a few things I struggled with the most during my time on this project.
 
 ## Wireframe
 
