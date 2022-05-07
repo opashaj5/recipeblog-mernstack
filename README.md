@@ -16,10 +16,6 @@ Peas in a Pod is a recipe blog that utilizes MongoDB/Mongoose, Express, React, N
 
 Node.js | Express | React | MongoDB | Mongoose | JavaScript | CSS | HTML
 
-## ERD
-
-<img src="https://i.imgur.com/xCwZhgn.png">
-
 ## Link to Heroku
 
 https://ornelapeas.herokuapp.com/
