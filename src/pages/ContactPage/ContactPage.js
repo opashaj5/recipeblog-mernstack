@@ -13,8 +13,7 @@ export default function ContactPage() {
                             <p className="card-text"></p>
                         </div>
                     </div>
-                </article><br></br>
-                <button>Sign Up For Newsletters!</button>
+                </article>
             </div>
         </main>
     )

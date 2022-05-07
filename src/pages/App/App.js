@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 // import styles from './App.module.css';
 import { getUser } from '../../utilities/users-service';
@@ -22,23 +22,26 @@ export default function App() {
     const [user, setUser] = useState();
     const [chosenPost, setChosenPost] = useState({});
 
+    useEffect(() => {
+        setUser(getUser())
+    }, [])
+
     return (
         <>
-            <Nav />
+            <Nav user={user} setUser={setUser} />
             <main>
                 {
                     user ?
                         <>
                             <Routes>
-                                <Route path="/" element={<IndexPage setChosenPost={setChosenPost} />}></Route>
-                                <Route path="/:id" element={<ShowPage chosenPost={chosenPost} />}></Route>
-                                <Route path="/about" element={<AboutPage />}></Route>
-                                <Route path="/contact" element={<ContactPage />}></Route>
-                                {/* <Route path="/shop" element={<ShopPage />}></Route> */}
-                                <Route path="/new" element={<CreatePage />}></Route>
-                                <Route path="/edit/post/:id" element={<EditPage />}></Route>
-                                <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />}></Route>
-                                <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />}></Route>
+                                <Route path="/" element={<IndexPage setChosenPost={setChosenPost} />} />
+                                <Route path="/:id" element={<ShowPage chosenPost={chosenPost} />} />
+                                <Route path="/about" element={<AboutPage />} />
+                                <Route path="/contact" element={<ContactPage />} />
+                                <Route path="/new" element={<CreatePage />} />
+                                <Route path="/edit/post/:id" element={<EditPage chosenPost={chosenPost} />} />
+                                <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
+                                <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
                             </Routes>
                         </>
                         :

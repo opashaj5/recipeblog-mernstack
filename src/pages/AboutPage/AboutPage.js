@@ -15,7 +15,6 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </article><br></br>
-                <Link to="/contact"><button>Contact Me</button></Link>
             </div>
         </main>
     )

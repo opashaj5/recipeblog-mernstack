@@ -27,8 +27,10 @@ export default function IndexPage({ setChosenPost }) {
     }
 
     return (
-        <div className="list">
-            <h1 className="bigtext">Index Page</h1>
+        <>
+            <h1 class="header text-center">What's For Dinner?</h1>
+            <div className="anchor-wrapper">
+            </div>
             <div className="container">
                 <div className="card-wrapper">
                     {posts.map((post, idx) => {
@@ -39,7 +41,7 @@ export default function IndexPage({ setChosenPost }) {
                                     <div className="card-body">
                                         <h5 className="card-title">{post.title}</h5>
                                         <p className="card-text">{post.entry}</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <a href={`/${post._id}`} className="btn btn-info">View Full Recipe</a>
                                     </div>
                                 </div>
                             </Link>
@@ -47,6 +49,6 @@ export default function IndexPage({ setChosenPost }) {
                     })}
                 </div>
             </div>
-        </div >
+        </>
     );
 }

@@ -3,7 +3,7 @@ const router = express.Router()
 const Post = require('../../models/post')
 const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
-// Get all Tasks
+// Index
 router.get("/", (req, res) => {
     Post.find({}, (err, foundPosts) => {
         if (!err) {

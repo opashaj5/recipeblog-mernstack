@@ -1,0 +1,16 @@
+.Nav {
+    background-color: #F8F0E3;
+    border-radius: 5px;
+}
+
+a {
+    color: black !important;
+    font-weight: bold !important;
+    align-items: center !important;
+    text-align: center;
+    display: flex;
+}
+
+a:hover {
+    color: #615954 !important;
+}

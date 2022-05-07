@@ -7,7 +7,7 @@ import Logo from '../../components/Logo/Logo';
 import MenuList from '../../components/MenuList/MenuList';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
-import UserLogOut from '../../components/UserLogOut/UserLogOut';
+// import UserLogOut from '../../components/UserLogOut/UserLogOut';
 
 export default function NewOrderPage({ user, setUser }) {
     const [menuItems, setMenuItems] = useState([]);
@@ -63,7 +63,7 @@ export default function NewOrderPage({ user, setUser }) {
                     setActiveCat={setActiveCat}
                 />
                 <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
-                <UserLogOut user={user} setUser={setUser} />
+                {/* <UserLogOut user={user} setUser={setUser} /> */}
             </aside>
             <MenuList
                 menuItems={menuItems.filter(item => item.category.name === activeCat)}

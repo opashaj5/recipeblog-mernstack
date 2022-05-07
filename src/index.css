@@ -24,7 +24,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F8F0E3;
   padding: 2vmin;
   height: 100vh;
 }
@@ -125,6 +124,7 @@ input:focus {
 
 button,
 a.button {
+  width: auto;
   margin: 1vmin;
   padding: 1vmin;
   color: var(--white);
@@ -172,4 +172,8 @@ button[type="submit"] {
   height: 100%;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.logout-btn {
+  background-color: #615954 !important;
 }

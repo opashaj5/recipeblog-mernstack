@@ -1,17 +1,38 @@
+import { useRef } from "react"
+import axios from "axios"
 import { useNavigate } from "react-router-dom";
-import { useRef } from "react";
 
-export default function NewPost() {
+export default function NewPost(props) {
+    const navigate = useNavigate();
+    const title = useRef()
+    const img = useRef()
+    const entry = useRef()
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            console.log(`test`)
+            const response = await axios.post("/api/posts", {
+                title: title.current.value, img: img.current.value, entry: entry.current.value
+            })
+            navigate("/")
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
     return (
-        <div className="new-post">
-            <h2>Create a New Post</h2>
-            <form action="/" method="POST">
-                Recipe Name: <input className="input-style" name="title" type="text" /><br />
-                Image URL: <input className="input-style" name="img" type="url" /><br />
-                Entry: <textarea className="entry-style" name="entry" /><br />
-                <input id="btn" type="submit" value="Submit" />
-            </form>
-            <a href="/users/home"><button>Back To Main Page</button></a>
+        <div className="newCardOuterWrapper">
+            <div className="createNewCard">
+                <h1>Create New Recipe</h1>
+                <form onSubmit={handleSubmit}>
+                    <input placeholder='Recipe Name' type="text" ref={title} />
+                    <input placeholder='Image Source' type="text" ref={img} />
+                    <input placeholder='Cooking Ingredients &amp; Instructions' type="text" ref={entry} />
+                    <input type="submit" value="Submit" />
+                </form>
+                <a href="/"><button>Back To Home Page</button></a>
+            </div>
         </div>
     )
-};
+}
