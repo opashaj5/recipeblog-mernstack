@@ -18,8 +18,6 @@ Node.js | Express | React | MongoDB | Mongoose | JavaScript | CSS | HTML
 
 ## Link to Heroku
 
-https://ornelapeas.herokuapp.com/
-
 ## Next Steps
 
 I would like to get the search and edit functions working and likes/comments features. Those were thing few things I struggled with the most during my time on this project.
