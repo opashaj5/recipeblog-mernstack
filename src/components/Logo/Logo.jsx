@@ -1,9 +1,9 @@
 import styles from './Logo.module.css';
+// import Nav from '../Nav/Nav';
 
 export default function Logo() {
     return (
-        <header className={styles.Logo}>
-            {/* <img class="img-fluid" src="https://i.imgur.com/GuiSbvm.png" /> */}
-        </header>
+        <div className={styles.Logo}>
+        </div>
     );
 }

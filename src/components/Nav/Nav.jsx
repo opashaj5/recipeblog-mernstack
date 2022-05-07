@@ -1,8 +1,8 @@
 import React from "react";
-import { useState } from 'react';
+// import { useState } from 'react';
 import styles from "./Nav.module.css";
 import { Link } from "react-router-dom";
-import UserLogOut from "../UserLogOut/UserLogOut";
+// import UserLogOut from "../UserLogOut/UserLogOut";
 import { logOut } from "../../utilities/users-service";
 import Logo from "../Logo/Logo";
 
@@ -14,10 +14,10 @@ export default function Nav({ user, setUser }) {
     };
 
     return (
-        <>
+        <header className={styles.Nav}>
             <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
-                    {/* <Link to="/" className="navbar-brand"><img src={Logo} id="logo" alt="blog logo"></img></Link> */}
+                    <Link to="/" className="navbar-brand"><img src={`https://i.imgur.com/GuiSbvm.png`} style={{ width: '25rem' }} id="logo" alt="blog logo"></img></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -39,12 +39,12 @@ export default function Nav({ user, setUser }) {
                                 <Link to="/new" className="nav-link">CREATE</Link>
                             </li>
                             <li class="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recipes</a>
+                                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">RECIPES</a>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
+                                    {/* <li>
                                         <Link to="/categories" class="dropdown-item">Categories</Link>
-                                    </li>
-                                    <UserLogOut user={user} setUser={setUser} />
+                                    </li> */}
+                                    {/* <UserLogOut user={user} setUser={setUser} /> */}
                                 </ul>
                             </li>
                         </ul>
@@ -55,6 +55,6 @@ export default function Nav({ user, setUser }) {
                     </div>
                 </div>
             </nav>
-        </>
+        </header>
     );
 };
